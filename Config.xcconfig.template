@@ -1,0 +1,59 @@
+// Configuration Template for Federal Job Finder
+//
+// SETUP INSTRUCTIONS:
+// 1. Copy this file to create your local configuration:
+//    cp Config.xcconfig.template Config.xcconfig
+//
+// 2. Edit Config.xcconfig and replace YOUR_API_KEY_HERE with your actual API key
+//
+// 3. Get your API key from: https://developer.usajobs.gov/APIRequest/Index
+//
+// 4. IMPORTANT: Never commit Config.xcconfig to version control!
+//    It's already in .gitignore to protect your API key.
+//
+// 5. For detailed setup instructions, see README-API-SETUP.md
+
+// ==============================================================================
+// API Configuration
+// ==============================================================================
+
+// USAJobs API Key
+// Replace YOUR_API_KEY_HERE with your actual API key from developer.usajobs.gov
+USAJOBS_API_KEY = YOUR_API_KEY_HERE
+
+// ==============================================================================
+// Optional: Additional Configuration
+// ==============================================================================
+
+// You can add additional configuration values here as needed
+// For example:
+// API_BASE_URL = https://data.usajobs.gov/api
+// API_VERSION = v1
+// ANALYTICS_KEY = your_analytics_key_here
+
+// ==============================================================================
+// Build Configuration (Optional)
+// ==============================================================================
+
+// Uncomment and customize these if needed for different build configurations
+// DEBUG_MODE = YES
+// ENABLE_LOGGING = YES
+
+// ==============================================================================
+// Team-Specific Configuration (Optional)
+// ==============================================================================
+
+// Add any team-specific settings here
+// DEVELOPMENT_TEAM = YOUR_TEAM_ID
+// CODE_SIGN_IDENTITY = iPhone Developer
+
+// ==============================================================================
+// Notes
+// ==============================================================================
+//
+// - This file should NEVER be committed to version control
+// - Each team member should have their own Config.xcconfig file
+// - The .gitignore file is configured to exclude Config.xcconfig
+// - Only the .template file should be in version control
+// - For help, see README-API-SETUP.md or contact your team lead
+//

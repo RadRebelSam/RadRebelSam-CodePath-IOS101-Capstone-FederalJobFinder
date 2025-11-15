@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="ApplicationTracking" representedClassName="ApplicationTracking" syncable="YES" codeGenerationType="class">
+        <attribute name="applicationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="jobId" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="reminderDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <fetchIndex name="byJobId">
+            <fetchIndexElement property="jobId" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byApplicationDate">
+            <fetchIndexElement property="applicationDate" type="Binary" order="descending"/>
+        </fetchIndex>
+        <fetchIndex name="byStatus">
+            <fetchIndexElement property="status" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="Job" representedClassName="Job" syncable="YES" codeGenerationType="class">
+        <attribute name="applicationDeadline" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="applicationUri" optional="YES" attributeType="String"/>
+        <attribute name="cachedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="datePosted" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="department" optional="YES" attributeType="String"/>
+        <attribute name="gradeDisplay" optional="YES" attributeType="String"/>
+        <attribute name="isFavorited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isRemoteEligible" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="jobId" optional="YES" attributeType="String"/>
+        <attribute name="keyRequirementsText" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="majorDutiesText" optional="YES" attributeType="String"/>
+        <attribute name="salaryMax" optional="YES" attributeType="Integer 32" defaultValue="0" usesScalarValueType="YES"/>
+        <attribute name="salaryMin" optional="YES" attributeType="Integer 32" defaultValue="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <fetchIndex name="byJobId">
+            <fetchIndexElement property="jobId" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byFavorited">
+            <fetchIndexElement property="isFavorited" type="Binary" order="descending"/>
+        </fetchIndex>
+        <fetchIndex name="byApplicationDeadline">
+            <fetchIndexElement property="applicationDeadline" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byDatePosted">
+            <fetchIndexElement property="datePosted" type="Binary" order="descending"/>
+        </fetchIndex>
+        <fetchIndex name="byCachedAt">
+            <fetchIndexElement property="cachedAt" type="Binary" order="descending"/>
+        </fetchIndex>
+        <fetchIndex name="byDepartment">
+            <fetchIndexElement property="department" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byLocation">
+            <fetchIndexElement property="location" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="bySalaryRange">
+            <fetchIndexElement property="salaryMin" type="Binary" order="ascending"/>
+            <fetchIndexElement property="salaryMax" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byRemoteEligible">
+            <fetchIndexElement property="isRemoteEligible" type="Binary" order="descending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="SavedSearch" representedClassName="SavedSearch" syncable="YES" codeGenerationType="class">
+        <attribute name="department" optional="YES" attributeType="String"/>
+        <attribute name="isNotificationEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="keywords" optional="YES" attributeType="String"/>
+        <attribute name="lastChecked" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="salaryMax" optional="YES" attributeType="Integer 32" defaultValue="0" usesScalarValueType="YES"/>
+        <attribute name="salaryMin" optional="YES" attributeType="Integer 32" defaultValue="0" usesScalarValueType="YES"/>
+        <attribute name="searchId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <fetchIndex name="bySearchId">
+            <fetchIndexElement property="searchId" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byLastChecked">
+            <fetchIndexElement property="lastChecked" type="Binary" order="descending"/>
+        </fetchIndex>
+        <fetchIndex name="byNotificationEnabled">
+            <fetchIndexElement property="isNotificationEnabled" type="Binary" order="descending"/>
+        </fetchIndex>
+    </entity>
+</model>
