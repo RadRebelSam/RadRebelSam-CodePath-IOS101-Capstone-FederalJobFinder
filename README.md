@@ -1,6 +1,14 @@
 
 # Federal Job Finder
 
+<div>
+    <a href="https://www.loom.com/share/153f7a57644e4d2d9408d4cbac65d154">
+    </a>
+    <a href="https://www.loom.com/share/153f7a57644e4d2d9408d4cbac65d154">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/153f7a57644e4d2d9408d4cbac65d154-495334420d6f08b0-full-play.gif#t=0.1">
+    </a>
+  </div>
+
 ## Table of Contents
 
 1. [Overview](#Overview)
@@ -270,4 +278,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Kiro AI** for development assistance throughout this project
 - **Apple** for SwiftUI and Core Data frameworks
 - The open-source community for inspiration and best practices
+
 
